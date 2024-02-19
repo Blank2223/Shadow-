@@ -1,0 +1,22 @@
+<div class="user-I">
+    <h2>Demo Angular Forms</h2>
+
+    <form *ngIf="myForm" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="formContainer">
+        <div class="field" [class.invalid]="myForm.invalid && myForm.get('sku')?.touched">
+            <label for="skuInput">sku: </label>
+            <input type="text" 
+                 id="skuInput" 
+                placeholder="SKU" 
+                formControlName ="sku">
+
+            <div *ngIf="myForm.get('sku')!.hasError('required') && myForm.get('sku')!.touched">
+                sku is required.
+            </div>
+        </div>
+
+        <button type="submit" class="ui-button">Submit</button>
+        
+    </form>
+</div>
+
+

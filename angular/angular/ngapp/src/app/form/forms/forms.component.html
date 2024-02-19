@@ -1,0 +1,16 @@
+<div class="user-I">
+    <h2>Demo Angular Forms</h2>
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="formContainer">
+        <div class="field">
+            <label for="skuInput">sku: </label>
+            <input type="text" 
+                 id="skuInput" 
+                placeholder="sku" 
+                name="sku" ngModel>
+        </div>
+
+        <button type="submit" class="ui-button">Submit</button>
+        
+    </form>
+</div>

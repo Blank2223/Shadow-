@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    color: #ccc;
+}
+label{
+    display: block;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+.ui-button{
+    margin-top: 5px;
+    color: #ccc;
+    background-color: rgb(50, 50, 213);
+    border-radius: 5px;
+}
